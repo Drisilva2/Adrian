@@ -1,0 +1,12 @@
+<h1>Editar tarea</h1>
+<%= form_with model: @task do |form| %>
+    <div>
+        <%= form.label :Titulo %>
+        <%= form.text_field :title %>
+    </div>
+    <div>
+        <%= form.check_box :Completado %>
+        <%= form.label :completed, "Completed" %>
+    </div>
+    <%= form.submit %>
+<% end %>

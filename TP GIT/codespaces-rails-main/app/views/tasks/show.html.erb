@@ -1,0 +1,4 @@
+<h1><%= @task.title %></h1>
+<p>Completado: <%= @task.completed ? 'Si': 'No' %></p>
+<%= link_to "Editar tarea", edit_task_path(@task) %>
+<%= button_to 'Borrar tarea', task_path(@task), method: 'delete', data: { confirm: 'Are you sure?' } %>
